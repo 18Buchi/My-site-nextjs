@@ -6,7 +6,7 @@ export const HeaderManu = [
     title: "Instagram",
     src: "https://www.instagram.com/18buchi/",
     icon: <AiIcons.AiFillInstagram />,
-    cName: "nav-text",
+    cName: "navtext",
   },
   { 
     title: "twitter",

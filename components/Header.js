@@ -1,13 +1,6 @@
-import React, { useState, useEffect } from "react";
-import styles from "./Header.module.css";
+import styles from "./Header-Footer.module.css";
 import Link from "next/link";
 import { HeaderManu } from "./HeaderManu";
-import cn from "classnames";
-
-import { IconContext } from "react-icons";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
 
 export function Header(props) {
   return (
@@ -24,18 +17,18 @@ export function Header(props) {
   );
 }
 
-export const Headerbar = (props) => {
-  console.log(Headerbar);
+export const Headerbar = () => {
   return (
     <div className={styles.navWrapper}>
       {HeaderManu.map((item, index) => {
         return (
           <nav>
             <ul className={styles.navManu}>
+            {/* keyがうまく付いていない 何故？😭*/}
               <li key={index} className={item.cName}>
                 <a href={item.src}>
                   {item.icon}
-                  {"　"}
+                  {" "}
                   {item.title}
                 </a>
               </li>
