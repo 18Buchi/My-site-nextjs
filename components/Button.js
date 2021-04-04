@@ -1,13 +1,33 @@
-import React, { Component } from "react";
+import React from "react";
+// import Counter from "./Counter"
 
 export class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+    this.countUp = this.countUp.bind(this);
+  }
+  countUp() {
+    this.setState(prevState => {
+      return {
+        count: prevState.count + 1
+      };
+    });
+  }
+
+  
   render() {
+
     return (
       <>
-        <button>Good💓</button>
+        <button onClick={this.countUp}> Good💓 {this.state.count}</button>
         <style jsx>{`
           button {
-            font-size: 0.8rem;
+            width: 18%;
+            min-width: 70px;
+            font-size: 2vw;
             background: pink;
             padding: 3px 8px;
             border-radius: 6px;
@@ -30,13 +50,14 @@ export class BadButton extends React.Component {
         <button>Bad😱</button>
         <style jsx>{`
           button {
-            font-size: 0.8rem;
+            width: 18%;
+            min-width: 70px;
+            font-size: 2vw;
             background: rgb(193, 187, 245);
             padding: 3px 12px;
             border-radius: 6px;
             margin-bottom: 0 20px;
           }
-          
         `}</style>
       </>
     );
@@ -70,7 +91,6 @@ export class BuyButton extends React.Component {
           button:hover {
             background: #444;
           }
-
         `}</style>
       </>
     );
