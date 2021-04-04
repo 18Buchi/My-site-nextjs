@@ -6,6 +6,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
 
+
 export default function Home() {
   const menu = <FaIcons.FaBars />;
   const home = <BiIcons.BiHomeSmile />;
@@ -17,6 +18,8 @@ export default function Home() {
         <link rel="icon" href="/STREETHANDS.png" />
       </Head>
       <Header link="./outlink" icon={menu} />
+
+
 
       <main>
       <img src={"./images/tw-header.jpg"} className="image-top" />
