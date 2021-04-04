@@ -55,8 +55,10 @@ export default function Designcollection() {
             購入する
           </button>
         </a> */}
+  
 
         <div>
+        
           {images.map((image) => {
             return (
               <ul>
@@ -69,8 +71,8 @@ export default function Designcollection() {
                     <span className="info">
                       <BadButton />
                     </span>
-                    <span className="info">
-                    {image.title}</span>
+                    <p className="info">
+                    {image.title}</p>
                   </div>
                 </li>
               </ul>
