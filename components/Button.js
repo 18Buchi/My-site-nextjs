@@ -5,21 +5,28 @@ export class LikeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
     this.countUp = this.countUp.bind(this);
   }
+
   countUp() {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return {
-        count: prevState.count + 1
+        count: prevState.count + 1,
       };
     });
   }
+  componentDidUpdate() {
+    localStorage.setItem("c", JSON.stringify(this.state.count));
+  }
+  componentDidMount() {
+    this.setState({
+      count: JSON.parse(localStorage.getItem("c")) || [],
+    });
+  }
 
-  
   render() {
-
     return (
       <>
         <button onClick={this.countUp}> Good💓 {this.state.count}</button>
