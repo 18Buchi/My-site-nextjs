@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Header, Headerbar } from '../components/Header'
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
 
 

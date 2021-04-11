@@ -49,6 +49,9 @@ li.sample-wrapper {
 .info {
   margin: 0 10px;
 }
+.likebuttou{
+  background: pink;
+}
 
 p.info {
   font-size: 2vw;
