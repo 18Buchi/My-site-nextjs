@@ -1,4 +1,5 @@
 import React from "react";
+
 // import Counter from "./Counter"
 
 export class LikeButton extends React.Component {
@@ -29,22 +30,8 @@ export class LikeButton extends React.Component {
   render() {
     return (
       <>
-        <button onClick={this.countUp}> Good💓 {this.state.count}</button>
-        <style jsx>{`
-          button {
-            width: 18%;
-            min-width: 70px;
-            font-size: 2vw;
-            background: pink;
-            padding: 3px 8px;
-            border-radius: 6px;
-            margin-bottom: 0 20px;
-             {
-              /* position: absolute;
-            left: 8%; */
-            }
-          }
-        `}</style>
+        <button className="bg-pink-300 text-xxs sm:text-xs md:text-base " onClick={this.countUp}> {this.props.b} {this.state.count}</button>
+       
       </>
     );
   }
@@ -54,7 +41,7 @@ export class BadButton extends React.Component {
   render() {
     return (
       <>
-        <button>Bad😱</button>
+        <button onClick={this.countUp}> {this.props.b} {this.state.count}</button>
         <style jsx>{`
           button {
             width: 18%;
