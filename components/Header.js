@@ -8,9 +8,7 @@ export function Header(props) {
       <div className={styles.headerContainer}>
         <img src={"./images/BUCHI.png"} className={styles.logo} />
         <Link href={props.link}>
-          <button className={styles.button}>
-            {props.icon}
-          </button>
+          <button className={styles.button}>{props.icon}</button>
         </Link>
       </div>
     </div>
@@ -20,16 +18,13 @@ export function Header(props) {
 export const Headerbar = () => {
   return (
     <div className={styles.navWrapper}>
-      {HeaderManu.map((item, index) => {
+      {HeaderManu.map((item) => {
         return (
-          <nav>
+          <nav key={item.title}>
             <ul className={styles.navManu}>
-            {/* keyがうまく付いていない 何故？😭*/}
-              <li key={index} className={item.cName}>
+              <li className={item.cName}>
                 <a href={item.src}>
-                  {item.icon}
-                  {" "}
-                  {item.title}
+                  {item.icon} {item.title}
                 </a>
               </li>
             </ul>
