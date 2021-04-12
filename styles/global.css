@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-style-none {
+    @apply bg-blue-700;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

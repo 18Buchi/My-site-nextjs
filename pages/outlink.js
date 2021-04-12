@@ -5,7 +5,7 @@ import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
 
 
-export default function About() {
+export default function Outlink() {
   const menu = <FaIcons.FaBars />;
   const home = <BiIcons.BiHomeSmile />;
   return (

@@ -8,7 +8,9 @@ export function Header(props) {
       <div className="pt-3 flex justify-between mx-auto max-w-screen-md">
         <img src={"./images/BUCHI.png"} className="h-14" />
         <Link href={props.link}>
-          <button className="py-4 px-8 text-3xl">{props.icon}</button>
+          <button className="py-4 px-8 text-3xl hover:text-blue-600 focus:outline-none">
+            {props.icon}
+          </button>
         </Link>
       </div>
     </div>
@@ -17,14 +19,14 @@ export function Header(props) {
 
 export const Headerbar = () => {
   return (
-    <div className={styles.navWrapper}>
+    <div  className="font-bold w-64 mx-auto">
       {HeaderManu.map((item) => {
         return (
           <nav key={item.title}>
-            <ul className={styles.navManu}>
-              <li className={item.cName}>
-                <a href={item.src}>
-                  {item.icon} {item.title}
+            <ul className="">
+              <li className="p-5 ">
+                <a href={item.src} className="text-2xl flex justify-between items-start bg-gray-600">
+                  {item.icon}<p className="px-2  ">{item.title}</p>
                 </a>
               </li>
             </ul>

@@ -18,30 +18,28 @@
 } */
 
 
-.button {
+/* .button {
   padding:1rem 2rem;
   border-style: none;
   background: none;
   font-size: 2rem;
   outline: none;
-}
+} */
 
-.button:hover {
-  /* opacity: 0.5; */
+/* .button:hover {
+  opacity: 0.5;
   cursor: pointer;
-}
-.button:active {
+} */
+/* .button:active {
   -webkit-transform: translate(0, 2px);
   -moz-transform: translate(0, 2px);
   transform: translate(0, 2px);
   border-bottom: none;
   opacity: 1;
   outline: none;
-}
+} */
 
-.navtext{
-  padding: 20px;
-}
+
 
 .navWrapper {
   font-family: "sans-serif";
