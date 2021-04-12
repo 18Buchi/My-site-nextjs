@@ -1,4 +1,4 @@
-.header {
+/* .header {
   background: white;
   position: fixed;
   top: 0;
@@ -7,20 +7,16 @@
   width: 100%;
   border-bottom: 1px solid #333;
   opacity: 0.98;
-}
+} */
 
-.headerContainer {
+/* .headerContainer {
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 800px;
-}
+} */
 
-.logo {
-  height: 60px;
-  margin: 0;
-}
 
 .button {
   padding:1rem 2rem;

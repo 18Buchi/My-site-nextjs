@@ -4,11 +4,11 @@ import { HeaderManu } from "./HeaderManu";
 
 export function Header(props) {
   return (
-    <div className={styles.header}>
-      <div className={styles.headerContainer}>
-        <img src={"./images/BUCHI.png"} className={styles.logo} />
+    <div className="fixed top-0 z-10 h-20 w-full bg-white border-b border-gray-700 opacity-95">
+      <div className="pt-3 flex justify-between mx-auto max-w-screen-md">
+        <img src={"./images/BUCHI.png"} className="h-14" />
         <Link href={props.link}>
-          <button className={styles.button}>{props.icon}</button>
+          <button className="py-4 px-8 text-3xl">{props.icon}</button>
         </Link>
       </div>
     </div>
