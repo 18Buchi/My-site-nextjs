@@ -30,9 +30,9 @@ li {
   list-style: none;
 }
 
-.img-wrapper {
+/* .img-wrapper {
   margin: 0 20px 0 20px;
-}
+} */
 
 img.image-top {
   text-align: center;
@@ -96,6 +96,3 @@ img.con:hover {
   opacity: 1;
 }
 
-.button:active {
-  outline: none;
-}

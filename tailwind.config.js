@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        foot: ["Courier New",],
+        foot: ["Courier New"],
+      },
+      boxShadow: {
+        under: '0 6px 0 rgba(0,0,0,0.5)',
       },
     },
   },
@@ -13,4 +16,3 @@ module.exports = {
   },
   plugins: [],
 };
-
