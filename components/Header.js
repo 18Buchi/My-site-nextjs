@@ -1,4 +1,3 @@
-import styles from "./Header-Footer.module.css";
 import Link from "next/link";
 import { HeaderManu } from "./HeaderManu";
 
@@ -19,14 +18,19 @@ export function Header(props) {
 
 export const Headerbar = () => {
   return (
-    <div  className="font-bold w-64 mx-auto">
+    <div className="font-bold w-56 mx-auto">
       {HeaderManu.map((item) => {
         return (
           <nav key={item.title}>
             <ul className="">
               <li className="p-5 ">
-                <a href={item.src} className="text-2xl flex justify-between items-start bg-gray-600">
-                  {item.icon}<p className="px-2  ">{item.title}</p>
+                <a
+                  href={item.src}
+                  className="p-3 flex items-start hover:bg-gray-100 rounded md:rounded-lg"
+                >
+                  <p className="text-3xl">{item.icon}</p>
+                  {"　"}
+                  <p className="text-2xl">{item.title}</p>
                 </a>
               </li>
             </ul>
