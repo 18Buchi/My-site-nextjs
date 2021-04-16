@@ -21,7 +21,6 @@ export default function Designcollection() {
         <BuyButton />
         <DesignWrapper />
       </main>
-      <Footer />
     </div>
   );
 }

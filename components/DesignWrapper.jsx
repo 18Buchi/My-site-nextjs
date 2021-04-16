@@ -1,4 +1,4 @@
-import { LikeButton, BadButton } from "../components/Button";
+import { LikeButton, BadButton } from "./Button";
 
 export default function DesignWrapper() {
   const images = [
