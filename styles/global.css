@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-style-none {
-    @apply bg-blue-700;
+  .main-button {
+    @apply block mx-auto my-4 w-11/12 max-w-2xl rounded-xl md:rounded-3xl border-2 border-gray-500 shadow-under opacity-50;
   }
-  .btn-blue:hover {
-    @apply bg-blue-700;
+  .main-button:hover {
+    @apply opacity-100 cursor-pointer;
   }
 }
 
@@ -95,4 +95,3 @@ img.con {
 img.con:hover {
   opacity: 1;
 }
-
