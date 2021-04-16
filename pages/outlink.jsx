@@ -16,7 +16,6 @@ export default function Outlink() {
 
       <Header link="./" icon={home} />
       <Headerbar />
-      <Footer />
     </div>
   );
 }

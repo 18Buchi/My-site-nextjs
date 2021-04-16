@@ -24,15 +24,13 @@ export default function Home() {
           <Link href="/designcollection">
             <img
               src={"./images/Designcollection.png"}
-              className="block mx-auto my-3 w-11/12 max-w-2xl rounded-xl md:rounded-3xl border-2 border-gray-500 shadow-under opacity-50	hover:cursor-pointer opacity-100"
+              className="main-button"
             />
           </Link>
-          <img src={"./images/Notready.png"} className="con" />
-          <img src={"./images/Notready.png"} className="con" />
+          <img src={"./images/Notready.png"} className="main-button"/>
+          <img src={"./images/Notready.png"} className="main-button"/>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
