@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 import { BuyButton } from "../components/Button";
 import * as FaIcons from "react-icons/fa";
 import * as BiIcons from "react-icons/bi";
@@ -13,8 +12,7 @@ export default function Designcollection() {
   return (
     <div>
       <Head>
-        <title>Buchi</title>
-        <link rel="icon" href="/STREETHANDS.png" />
+        <title>Buchi.Collection</title>
       </Head>
       <Header link="./" icon={home} />
       <main>

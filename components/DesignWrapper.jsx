@@ -1,4 +1,4 @@
-import { LikeButton, BadButton } from "./Button";
+import { BadButton, LikeButton } from "./Button";
 
 export default function DesignWrapper() {
   const images = [
@@ -24,18 +24,22 @@ export default function DesignWrapper() {
       {images.map((image) => {
         return (
           <ul key={image.img}>
-            <li className="sample-wrapper">
-              <img src={image.img} className="sample" />
-              <div className="info-wrapper">
-                <span className="info">
-                  <LikeButton />
-                </span>
-                <span className="info">
-                  <BadButton />
-                </span>
+            <li className="rounded-xl p-4 mx-auto my-10 w-9/12 max-w-2xl bg-gray-100 bg-opacity-30 shadow-card">
+              <img
+                src={image.img}
+                className="block text-center mx-auto w-11/12 max-w-2xl"
+              />
 
-                <p className="info">{image.title}</p>
-              </div>
+              <span className="mx-1">
+                <LikeButton />
+              </span>
+              <span className="mx-1">
+                <LikeButton />
+              </span>
+
+              <p className="inline-block rounded w-6/12 py-1 mx-4 my-2 bg-gray-100 bg-opacity-30">
+                {image.title}
+              </p>
             </li>
           </ul>
         );
