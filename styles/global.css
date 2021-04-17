@@ -4,7 +4,7 @@
 
 @layer components {
   .main-button {
-    @apply block mx-auto my-4 w-11/12 max-w-2xl rounded-xl md:rounded-3xl border-2 border-gray-500 shadow-under opacity-50;
+    @apply block mx-auto my-4 w-11/12 max-w-2xl rounded-xl md:rounded-3xl border-2 border-gray-500 shadow-indexButton opacity-50;
   }
   .main-button:hover {
     @apply opacity-100 cursor-pointer;
@@ -21,77 +21,13 @@ body {
   margin-top: 100px;
 }
 
-a {
+a{
+  outline: none;
   color: black;
   text-decoration: none;
+  max-width: 100%;
 }
 
 li {
   list-style: none;
-}
-
-/* .img-wrapper {
-  margin: 0 20px 0 20px;
-} */
-
-img.image-top {
-  text-align: center;
-  margin: 30px auto;
-  width: 800px;
-  max-width: 100%;
-  display: block;
-  opacity: 0.8;
-}
-
-li.sample-wrapper {
-  background: rgb(247, 246, 246, 0.3);
-  padding: 20px;
-  margin: 40px;
-  border-radius: 6px;
-  box-shadow: 2px 2px 3px rgba(206, 206, 206, 0.5);
-}
-
-.info-wrapper {
-  border-bottom: gray;
-}
-
-.info {
-  margin: 0 10px;
-}
-
-p.info {
-  font-size: 2vw;
-  width: 50%;
-  margin: 2px 10px 0 10px;
-  display: inline-block;
-  background: rgb(247, 246, 246, 0.3);
-  /* box-shadow: 2px 2px 3px rgba(206, 206, 206, 0.5); */
-  border-radius: 4px;
-  padding: 3px 3px;
-  /* justify-content: center; */
-  /* text-align: center; */
-}
-
-img.sample {
-  text-align: center;
-  margin: 0 auto;
-  width: 800px;
-  max-width: 80%;
-  display: block;
-}
-
-img.con {
-  margin: 20px auto;
-  width: 700px;
-  max-width: 90%;
-  display: block;
-  border: 0.5px solid gray;
-  border-radius: 2vh;
-  box-shadow: 0 6px 0 gray;
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-img.con:hover {
-  opacity: 1;
 }

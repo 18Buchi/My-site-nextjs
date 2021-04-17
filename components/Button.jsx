@@ -1,5 +1,4 @@
 import React from "react";
-// import Counter from "./Counter"
 
 export class LikeButton extends React.Component {
   constructor(props) {
@@ -25,47 +24,17 @@ export class LikeButton extends React.Component {
       count: JSON.parse(localStorage.getItem("c")) || [],
     });
   }
-
   render() {
     return (
       <>
-        <button onClick={this.countUp}> Good💓 {this.state.count}</button>
-        <style jsx>{`
-          button {
-            width: 18%;
-            min-width: 70px;
-            font-size: 2vw;
-            background: pink;
-            padding: 3px 8px;
-            border-radius: 6px;
-            margin-bottom: 0 20px;
-             {
-              /* position: absolute;
-            left: 8%; */
-            }
-          }
-        `}</style>
-      </>
-    );
-  }
-}
-
-export class BadButton extends React.Component {
-  render() {
-    return (
-      <>
-        <button>Bad😱</button>
-        <style jsx>{`
-          button {
-            width: 18%;
-            min-width: 70px;
-            font-size: 2vw;
-            background: rgb(193, 187, 245);
-            padding: 3px 12px;
-            border-radius: 6px;
-            margin-bottom: 0 20px;
-          }
-        `}</style>
+        <button
+          onClick={this.countUp}
+          className="rounded w-1/4 max-w-likeButton 
+         text-xs px-3 py-1 mx-2 my-2 bg-pink-500 bg-opacity-30"
+        >
+          {" "}
+          Good💓 {this.state.count}
+        </button>
       </>
     );
   }
@@ -74,32 +43,15 @@ export class BadButton extends React.Component {
 export class BuyButton extends React.Component {
   render() {
     return (
-      <>
-        <a href="https://suzuri.jp/Buchi18" className="underNav">
-          <button>
+      <div>
+        <a href="https://suzuri.jp/Buchi18">
+          <button className="fixed bottom-16 right-12 rounded-xl bg-gray-500 hover:bg-gray-600 shadow-buyButton px-3 py-3 text-white font-semibold ">
             Want to buy !!
             <br />
             購入する
           </button>
         </a>
-        <style jsx>{`
-          button {
-            font-weight: semi-bold;
-            border-radius: 6px;
-            box-shadow: 1px 2px 10px gray;
-            color: white;
-            padding: 7px 15px;
-            background: #777;
-            position: fixed;
-            bottom: 8%;
-            right: 8%;
-            z-index: 1;
-          }
-          button:hover {
-            background: #444;
-          }
-        `}</style>
-      </>
+      </div>
     );
   }
 }
