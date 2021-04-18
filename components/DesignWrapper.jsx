@@ -1,8 +1,8 @@
-import { BadButton, LikeButton } from "./Button";
+import { Like, Bad } from "./Button";
 
 export default function DesignWrapper() {
   const images = [
-    { img: "sample/sample8.png", title: "セル・ライト" },
+    { img: "sample/sample8.png", title: "セル・ライト"},
     { img: "sample/sample15.png", title: "BUCHI-T" },
     { img: "sample/sample9.png", title: "リック・メタボ" },
     { img: "sample/sample10.png", title: "KILROY" },
@@ -19,6 +19,8 @@ export default function DesignWrapper() {
     // { img: "sample/sample2.png", title: "NEKO NEKO" },
     // { img: "sample/sample7.png", title: "Art girl" },
   ];
+
+  console.log(images);
   return (
     <div>
       {images.map((image) => {
@@ -31,10 +33,10 @@ export default function DesignWrapper() {
               />
 
               <span className="mx-1">
-                <LikeButton />
+              <Like />
               </span>
               <span className="mx-1">
-                <LikeButton />
+                <Bad />
               </span>
 
               <p className="inline-block rounded w-6/12 py-1 mx-4 my-2 bg-gray-100 bg-opacity-30">
@@ -42,8 +44,11 @@ export default function DesignWrapper() {
               </p>
             </li>
           </ul>
+          
         );
       })}
     </div>
+    
   );
+  
 }
